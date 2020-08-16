@@ -6,9 +6,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AlgoController {
 
+	
+	@Autowired
+	private Environment env;
+	
+	@Value( "${algo.name}" )
+	private String name;
+
+
 	@GetMapping("/algo")
 	public String getAlgo() {
-		return "algo 2";
+		//return "algo 2 "+env.getProperty("agent007");
+		return "algo 2 "+name;
 	} 
+	
 	
 }
