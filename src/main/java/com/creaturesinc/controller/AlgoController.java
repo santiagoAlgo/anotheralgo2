@@ -16,7 +16,7 @@ public class AlgoController {
 	@GetMapping("/algo")
 	public String getAlgo() {
 		//return "algo 2 "+env.getProperty("agent007");
-		return "algo 2 "+name;
+		return "algo 3 "+name;
 	} 
 	
 }
