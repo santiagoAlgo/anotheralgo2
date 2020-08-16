@@ -12,11 +12,13 @@ public class AlgoController {
 	@Value( "${algo.name}" )
 	private String name;
 
+	@Value("${algo.secret.question}")
+	private String questionDisp;
 
 	@GetMapping("/algo")
 	public String getAlgo() {
 		//return "algo 2 "+env.getProperty("agent007");
-		return "algo 3 "+name;
+		return "algo 3 "+name+"<br>"+questionDisp;
 	} 
 	
 }
