@@ -8,7 +8,7 @@ public class AlgoController {
 
 	@GetMapping("/algo")
 	public String getAlgo() {
-		return "algo";
+		return "algo 2";
 	} 
 	
 }
